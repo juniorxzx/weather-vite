@@ -10,10 +10,16 @@ export const GlobalStyles = createGlobalStyle`
 
   }
 
+  html, body{
+    width: 100%;
+    height: 100%;
+  }
+
   body{
     min-width: 320px;
     width: 100%;
     height: 100%;
-
+    background-color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.text};
   }
 `;

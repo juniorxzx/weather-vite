@@ -6,8 +6,6 @@ export const Container = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-`;
-export const Title = styled.h1`
-  font-size: 2rem;
-  color: ${({ theme }) => theme.colors.primary};
+  flex-direction: column;
+  gap: 2rem;
 `;
