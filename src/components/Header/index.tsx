@@ -1,11 +1,13 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, HeaderStyled } from "./styles";
 import Location from "./Location";
 
 const Header = () => {
   return (
     <Container>
-      <Location />
+      <HeaderStyled>
+        <Location />
+      </HeaderStyled>
     </Container>
   );
 };
