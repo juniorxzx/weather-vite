@@ -10,7 +10,10 @@ export const Container = styled.header`
 export const HeaderStyled = styled.div`
   width: 100%;
   display: flex;
-  height: 4rem;
+  height: 60px;
+  padding: 0 1rem;
   background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
 `;
