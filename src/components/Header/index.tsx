@@ -1,11 +1,16 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, HeaderStyled } from "./styles";
 import Location from "./Location";
+import ToggleTheme from "./ToggleTheme";
 
 const Header = () => {
   return (
     <Container>
-      <Location />
+      <HeaderStyled>
+        <Location />
+
+        <ToggleTheme />
+      </HeaderStyled>
     </Container>
   );
 };
