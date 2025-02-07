@@ -5,6 +5,7 @@ import WeatherIconsDisplay from "../../components/WeatherIconsDisplay";
 import WeatherHighlight from "../../components/WeatherHighlight";
 import { getGeoLocation } from "../../api/GeoLocation";
 import { openWeather } from "../../api/OpenWeather";
+import DailyWeather from "../../components/DailyWeather";
 
 const Home = () => {
   const [currentWeather, setCurrentWeather] = useState<Weather.current>();
@@ -23,8 +24,6 @@ const Home = () => {
         );
         setCurrentWeather({ ...data.current, city });
         setWeather(data.daily);
-        console.log(data.current);
-        console.log(data.daily);
       } catch (err: any) {
         console.log(err.message);
       }
@@ -33,7 +32,7 @@ const Home = () => {
     fetchWeather();
   }, []);
 
-  if (!currentWeather) {
+  if (!currentWeather || !weather) {
     return <div>Loading...</div>;
   }
 
@@ -47,7 +46,9 @@ const Home = () => {
           location={currentWeather.city}
           temperature={Math.round(currentWeather.temp)}
         />
-        <WeatherIconsDisplay data={currentWeather}/>
+        <WeatherIconsDisplay data={currentWeather} />
+
+        <DailyWeather data={weather} />
       </Container>
     </Layout>
   );

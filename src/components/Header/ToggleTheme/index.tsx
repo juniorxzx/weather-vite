@@ -6,6 +6,7 @@ const ToggleTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext) || {};
 
   useEffect(() => {}, [theme]);
+  
 
   return (
     <Container onClick={toggleTheme}>
