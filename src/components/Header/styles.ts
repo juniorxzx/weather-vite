@@ -17,3 +17,9 @@ export const HeaderStyled = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const Box = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;

@@ -12,7 +12,7 @@ const ToggleTheme = () => {
     <Container onClick={toggleTheme}>
       <Box
         initial={{ scale: 1 }}
-        animate={{ x: theme === "dark" ? 40 : -40, scale: [1, 0.8, 1.2, 1] }}
+        animate={{ x: theme === "dark" ? 20 : -20, scale: [1, 0.8, 1.2, 1] }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         whileTap={{ scale: 0.7 }}
       >

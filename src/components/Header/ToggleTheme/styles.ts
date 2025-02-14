@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled(motion.div)`
   display: flex;
-  width: 120px;
+  width: 80px;
   height: 40px;
   border-radius: 1rem;
   justify-content: center;
