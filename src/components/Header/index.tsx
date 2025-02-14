@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, HeaderStyled } from "./styles";
+import { Box, Container, HeaderStyled } from "./styles";
 import Location from "./Location";
 import ToggleTheme from "./ToggleTheme";
+import Logout from "./Logout";
 
 const Header = () => {
   return (
@@ -9,7 +10,10 @@ const Header = () => {
       <HeaderStyled>
         <Location />
 
-        <ToggleTheme />
+        <Box>
+          <ToggleTheme />
+          <Logout />
+        </Box>
       </HeaderStyled>
     </Container>
   );

@@ -6,6 +6,7 @@ import WeatherHighlight from "../../components/WeatherHighlight";
 import { getGeoLocation } from "../../api/GeoLocation";
 import { openWeather } from "../../api/OpenWeather";
 import DailyWeather from "../../components/DailyWeather";
+import Header from "../../components/Header";
 
 const Home = () => {
   const [currentWeather, setCurrentWeather] = useState<Weather.current>();
@@ -38,6 +39,7 @@ const Home = () => {
 
   return (
     <Layout>
+      <Header />
       <Container>
         <WeatherHighlight
           description={(

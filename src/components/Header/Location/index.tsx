@@ -4,7 +4,7 @@ import { Container, Title } from "./styles";
 const Location = () => {
   return (
     <Container>
-      <Title>Weather ☁️</Title>
+      <Title>☁️</Title>
     </Container>
   );
 };

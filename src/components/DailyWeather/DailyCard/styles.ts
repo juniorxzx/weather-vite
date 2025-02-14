@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 import { TbTemperaturePlus, TbTemperatureMinus } from "react-icons/tb";
 
-
-
 export const Container = styled(motion.div)`
   display: flex;
   align-items: center;
@@ -27,6 +25,11 @@ export const MinMax = styled.div`
   flex-direction: row;
   gap: 0.5rem;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+  }
 `;
 
 export const Box = styled.div`
@@ -47,10 +50,8 @@ export const MinIcon = styled(TbTemperatureMinus)`
   font-size: 1rem;
 `;
 
-
-
 export const ConditionIcon = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
